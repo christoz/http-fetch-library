@@ -1,0 +1,19 @@
+{
+  "name": "http-fetch-library",
+  "version": "0.0.1",
+  "description": "A small api for fetch request",
+  "main": "http.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christoz/http-fetch-library.git"
+  },
+  "author": "Christos Ziogas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christoz/http-fetch-library/issues"
+  },
+  "homepage": "https://github.com/christoz/http-fetch-library#readme"
+}
