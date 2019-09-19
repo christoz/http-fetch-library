@@ -1,5 +1,3 @@
-import { deleteState } from '../../utils/localStorage';
-
 export const handleJSON = response => {
 	let result = null;
 
@@ -18,12 +16,7 @@ export const handleError = response => {
 	const succesCodes = [200, 201];
 
 	if (succesCodes.includes(response.code)) {
-		return response;
-	}
-
-	if (response.code === 401) {
-		deleteState();
-		window.location.href = '/login';
+		return Promise.resolve(response);
 	}
 
 	return Promise.reject(response);
